@@ -2,6 +2,7 @@
 
 -databaze: quickstart
 
+```sql
 CREATE TABLE `posts` (
     `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `title` varchar(255) NOT NULL,
@@ -25,3 +26,4 @@ CREATE TABLE `comments` (
     `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`)
 ) ENGINE=InnoDB CHARSET=utf8;
+```
